@@ -18,7 +18,7 @@ export async function getStaticProps() {
 }
 
 export default function Recipes({ products }) {
-  const { title, slug } = products[0].fields;
+  const { title, slug, description } = products[0].fields;
   return (
     <div className='recipe-list'>
       Recipe List
@@ -26,6 +26,7 @@ export default function Recipes({ products }) {
       <Link href={'/products/' + slug}>
         <a>Look at this</a>
       </Link>
+      {description}
     </div>
   );
 }

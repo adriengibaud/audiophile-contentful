@@ -45,6 +45,7 @@ export default function RecipeDetails({ product }) {
           src={`http:${imageProductMobile.fields.file.url}`}
           width={imageProductMobile.fields.file.details.image.width}
           height={imageProductMobile.fields.file.details.image.height}
+          quality={100}
         />
       </div>
       {description}
